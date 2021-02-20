@@ -1,0 +1,82 @@
+https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
+
+0. git config --global user.name "Your Name"
+0A. git config --global user.email youremail@example.com
+- After Installation of Git
+
+1. git init 
+- Create a an empty git repo or an exisiting folder into a git repo (untracked)
+
+2. git add <file>
+- Track file for changes in the repo
+
+3. git add .
+- Track all files in the repo
+
+4. git commit -m "Message"
+- Stage the changes on tracked files (files have to tracked first)
+
+* git commit -am "Message"
+- Track and Stage the changes on all files
+
+5. git show
+- Veribose of the latest Commit Changes
+
+6. git log
+- Show all previous commits
+
+* git log -p -2
+- Shows patched output (changes made in the commit) and shows only 2 previous commits
+
+* git log --stat
+- Shows statistics of the file modified
+
+* git log --since=2.weeks
+
+* git log --graph
+
+7. git status
+- Show staged and unstaged file info in the repo
+
+8. git branch <BranchName>
+- Create a new branch in the repo
+
+9. git checkout <BranchName> 
+- Move HEAD to the given branch
+
+* git checkout -b <BranchName>
+- Create a new branch and move HEAD to that branch
+
+10. git merge <BranchName>
+- Merge the given branch to the master branch (here, HEAD->master)
+
+11. git diff
+- See changes in tracked file but not staged
+
+12. git rm <file>
+- Remove the file from the tracking list and is updated only on the next commit
+
+13. git commit --amend
+- In case you've commited early and forgot to add more files, then add files and update your last commit without creating a new commit
+
+14. git reset HEAD <file>
+- Reset the file to unstaged (revert changes)(depreciated)
+
+15. git restore --staged <file>
+- Reset the file to unstaged (revert changes)
+
+16. git remote add origin <URL>
+- Link local git repo with Github (after creating a new repo in github as well)
+
+17. git pull
+- (Fetch + Merge) Bring Files from the Github Repo and replace with local repo files
+
+18. git fetch
+- Check the changes b/w local and hub repo
+
+19. git merge
+- Merge changes after fetch
+
+20. git push --set-upstream origin main
+- Initial Push Config for local and hub repo
+
