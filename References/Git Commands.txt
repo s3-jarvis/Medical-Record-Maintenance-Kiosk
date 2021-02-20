@@ -80,3 +80,9 @@ https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
 20. git push --set-upstream origin main
 - Initial Push Config for local and hub repo
 
+21. git clone <URL>
+- Clone a repository from GitHub
+
+22. git push
+- Update your changes to github
+
