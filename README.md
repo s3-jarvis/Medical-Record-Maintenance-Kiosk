@@ -1,5 +1,4 @@
-# Capstone Project: Medical Record Maintenance BOT
-## Team ID: 229
+## Capstone Project: Medical Record Maintenance BOT, T-229
 
 The Project is carried out under the guidance of Dr. T. S. Chandar. This is the entire code repository for the Final Year Project (7th - 8th SEM).
 
@@ -10,7 +9,7 @@ The Project has completed the Phase 1 and now moving into the Phase 2 in which t
 - [ ] UI Design for Kiosk
 - [ ] Software Design for Doctor's end
 
-### Team Members:
+## Team Members:
 - Shashank K S
 - Srinivas Bhat
 - Mahesh M
