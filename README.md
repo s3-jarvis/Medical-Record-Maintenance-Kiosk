@@ -15,7 +15,7 @@ Install the following for packages for UI-Design-Code,
 pip install PyQt5
 ```
 
-Also, download and install QT Designer Tool from [here](https://www.qt.io/download-qt-installerhsCtaTracking=99d9dd4f-5681-48d2-b096-470725510d34%7C074ddad0-fdef-4e53-8aa8-5e8a876d6ab4).
+Also, download and install QT Designer Tool from [here](https://www.qt.io/download-open-source?hsCtaTracking=9f6a2170-a938-42df-a8e2-a9f0b1d6cdce%7C6cb0de4f-9bb5-4778-ab02-bfb62735f3e5).
 
 ## Team Members
 - Shashank K S
