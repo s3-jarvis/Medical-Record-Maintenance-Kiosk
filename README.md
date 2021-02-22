@@ -9,7 +9,16 @@ The Project has completed the Phase 1 and now moving into the Phase 2 in which t
 - [ ] UI Design for Kiosk
 - [ ] Software Design for Doctor's end
 
-## Team Members:
+## Installations
+Install the following for packages for UI-Design-Code,
+'''
+pip install PyQt5
+'''
+
+Also, install QT Designer Tool from the link below.
+https://www.qt.io/download-qt-installerhsCtaTracking=99d9dd4f-5681-48d2-b096-470725510d34%7C074ddad0-fdef-4e53-8aa8-5e8a876d6ab4
+
+## Team Members
 - Shashank K S
 - Srinivas Bhat
 - Mahesh M
