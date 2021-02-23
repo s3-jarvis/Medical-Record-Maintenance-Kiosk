@@ -9,12 +9,22 @@ The Project has completed the Phase 1 and now moving into the Phase 2 in which t
 - [ ] Software Design for Doctor's end
 
 ## Libraies for Code
-Install the following for packages for UI-Design-Code,
-```
-pip install PyQt5
-```
+NFC-Gen-Code:
 
-Also, download and install QT Designer Tool from [here](https://www.qt.io/download-open-source?hsCtaTracking=9f6a2170-a938-42df-a8e2-a9f0b1d6cdce%7C6cb0de4f-9bb5-4778-ab02-bfb62735f3e5).
+
+Token-Gen-Code:
+
+
+UI-Design-Code:
+- Install the following for packages,
+	```
+	pip install PyQt5
+	```
+- Also, download and install QT Designer Tool from [here](https://www.qt.io/download-open-source?hsCtaTracking=9f6a2170-a938-42df-a8e2-a9f0b1d6cdce%7C6cb0de4f-9bb5-4778-ab02-bfb62735f3e5).
+
+Software-Design-Code:
+
+
 
 ## Team Members
 - Shashank K S
