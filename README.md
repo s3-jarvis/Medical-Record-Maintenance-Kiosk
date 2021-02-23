@@ -10,10 +10,10 @@ The Project has completed the Phase 1 and now moving into the Phase 2 in which t
 
 ## Libraies for Code
 NFC-Gen-Code:
-<Insert Documentation Here>
+- <Insert Documentation Here>
 
 Token-Gen-Code:
-<Insert Documentation Here>
+- <Insert Documentation Here>
 
 UI-Design-Code:
 - Install the following for packages,
@@ -23,7 +23,7 @@ UI-Design-Code:
 - Also, download and install QT Designer Tool from [here](https://www.qt.io/download-open-source?hsCtaTracking=9f6a2170-a938-42df-a8e2-a9f0b1d6cdce%7C6cb0de4f-9bb5-4778-ab02-bfb62735f3e5).
 
 Software-Design-Code:
-<Insert Documentation Here>
+- <Insert Documentation Here>
 
 
 ## Team Members
