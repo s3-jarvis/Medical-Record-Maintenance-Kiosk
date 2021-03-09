@@ -18,7 +18,7 @@ Token-Gen-Code:
 UI-Design-Code:
 - Install the following for packages,
 	```
-	pip install PyQt5
+	pip install pyqt5 pyuic5-tool
 	```
 - Also, download and install QT Designer Tool from [here](https://www.qt.io/download-open-source?hsCtaTracking=9f6a2170-a938-42df-a8e2-a9f0b1d6cdce%7C6cb0de4f-9bb5-4778-ab02-bfb62735f3e5).
 
@@ -61,4 +61,6 @@ Firstly, in order to contribute to this repo,
 	```
 	git pull
 	```
+
+<Comment Style>
 
