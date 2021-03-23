@@ -1,0 +1,5 @@
+-> Python code uses LoadUI to load .ui file created by Designer.
+-> There might be code redundency.
+-> We have to create difference classes for different widgets.
+-> Image is saving around 5s. some warning will appear name 
+'async callback' idk what it means. 
