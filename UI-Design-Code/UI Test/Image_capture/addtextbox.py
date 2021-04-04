@@ -14,6 +14,7 @@ class MainWindow(qtw.QWidget):
         self.layout().addWidget(my_label)
 
         symptoms = ["cough","cold","fever"]
+        #This will be returned from the function in speech processing method
 
         #Create an entry box
         my_entry = qtw.QLineEdit()
