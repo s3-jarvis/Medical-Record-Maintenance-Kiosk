@@ -3,7 +3,9 @@ import PyQt5.QtGui as qtg
 import logging
 
 logging.basicConfig(filename="Doctor's Report.log",format='%(message)s',filemode='a')
+logging.basicConfig(filename="Symptoms.log",format='%(message)s',filemode='a')
 logger=logging.getLogger()
+logger1=logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
 class MainWindow(qtw.QWidget):
@@ -19,7 +21,8 @@ class MainWindow(qtw.QWidget):
         self.layout().addWidget(my_label)
         
         symptoms = ["cough","cold","fever"]
-
+        logger1.info(symptoms)
+        
         #Create an entry box
         my_entry = qtw.QLineEdit()
         my_entry.setObjectName("Text_box")

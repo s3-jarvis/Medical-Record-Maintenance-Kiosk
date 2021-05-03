@@ -45,7 +45,7 @@ class main(QWidget):
         directory = "PID_{}".format(cnt)
 
         # Parent Directories
-        parent_dir = 'C:/Users/tejas/Capstone-Project-T229/UI-Design-Code/UI Test/Image_capture'
+        parent_dir = 'C:/Users/tejas/Capstone-Project-T229/UI-Design-Code/UI Test/Final UI Design'
 
         # Path
         paths = os.path.join(parent_dir, directory)
