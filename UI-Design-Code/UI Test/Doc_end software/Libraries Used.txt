@@ -5,6 +5,12 @@ time
 datetime
 os
 paramiko
+pytesseract
+pyreport
+logging
+gtts
+playsound
+speech_recognition
 webbrowser
 from PIL import Image
 from PyQt5 import QtCore
