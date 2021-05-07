@@ -1,0 +1,12 @@
+opencv-python
+sys
+numpy 
+time 
+datetime
+os
+paramiko
+pycopy-webbrowser
+pillow
+pyqt5
+pyuic5-tool
+reportlab

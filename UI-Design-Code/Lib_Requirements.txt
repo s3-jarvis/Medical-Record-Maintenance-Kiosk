@@ -1,0 +1,14 @@
+logging
+os
+sys
+time
+paramiko
+opencv-python
+numpy 
+pytesseract
+SpeechRecognition 
+pillow
+pyqt5
+pyuic5-tool
+gTTS
+playsound 
