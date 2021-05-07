@@ -19,11 +19,16 @@ from PyQt5.QtWidgets import QMainWindow, QWidget, QDialog, QApplication, QVBoxLa
 from gtts import gTTS
 from playsound import playsound
 
+cnt = 1
+directory = "PATIENT000{}".format(cnt)
+parent_dir = 'C:/Users/tejas/Capstone-Project-T229/UI-Design-Code/UI Test/Final UI Design'
+paths = os.path.join(parent_dir, directory)
+os.makedirs(paths)
 logger1 = logging.getLogger('general_logger')
 logger2 = logging.getLogger('some_other_logger')
-
-log_handler1 = logging.handlers.RotatingFileHandler('Data.log', maxBytes = 2000, backupCount = 10)
-log_handler2 = logging.handlers.RotatingFileHandler('Symptoms.log', maxBytes = 2000, backupCount = 10)
+        
+log_handler1 = logging.handlers.RotatingFileHandler('C:\\Users\\tejas\\Capstone-Project-T229\\UI-Design-Code\\UI Test\\Final UI Design\\PATIENT0001\\Data.log', maxBytes = 2000, backupCount = 10)
+log_handler2 = logging.handlers.RotatingFileHandler('C:\\Users\\tejas\\Capstone-Project-T229\\UI-Design-Code\\UI Test\\Final UI Design\\PATIENT0001\\Symptoms.log', maxBytes = 2000, backupCount = 10)
 
 logger1.addHandler(log_handler1)
 logger2.addHandler(log_handler2)
@@ -35,25 +40,10 @@ class main(QWidget):
         self.logic=0
         self.value=0
         self.pushButton.clicked.connect(self.first_click)
-        """audio0 = gTTS("Welcome to Patient registration kiosk , press next to continue")
-        audio0.save("textaudio0.mp3")
-        playsound("textaudio0.mp3")"""
     @pyqtSlot()
     
     def first_click(self):
-        cnt = 2
-        directory = "PID_{}".format(cnt)
-
-        # Parent Directories
-        parent_dir = 'C:/Users/tejas/Capstone-Project-T229/UI-Design-Code/UI Test/Final UI Design'
-
-        # Path
-        paths = os.path.join(parent_dir, directory)
-
-        # Create the directory
-        # 'PID_number'
-        os.makedirs(paths)
-        print("Directory '% s' created" % directory)
+        
         open(1)
         self.close()
 
@@ -75,8 +65,8 @@ class main(QWidget):
                 
             else:
                 print('Return not found')
-        window2.value1=window2.value1+1
-        cv2.imwrite('C:/Users/tejas/Capstone-Project-T229/UI-Design-Code/UI Test/Image_capture/PID_2/%s.png' % (window2.value1), frame)
+        #window2.value1=window2.value1+1
+        cv2.imwrite('C:/Users/tejas/Capstone-Project-T229/UI-Design-Code/UI Test/Final UI Design/PATIENT0001/%s.png' % (window2.value1), frame)
         cap.release()
         audioc = gTTS(" If picture is out of frame,press retry. else press next to continue .")
         audioc.save("textaudioc.mp3")
@@ -149,7 +139,7 @@ class main2(QWidget):
             else:
                 print('Return not found')
         window3.value2=window3.value2+1
-        cv2.imwrite('C:/Users/tejas/Capstone-Project-T229/UI-Design-Code/UI Test/Image_capture/PID_2/OCR_%s.jpg' % (window3.value2), frame)
+        cv2.imwrite('C:/Users/tejas/Capstone-Project-T229/UI-Design-Code/UI Test/Final UI Design/PATIENT0001/OCR_%s.jpg' % (window3.value2), frame)
         cap.release()
         pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
         img = cv2.imread('C:/Users/tejas/Capstone-Project-T229/UI-Design-Code/UI Test/Image_capture/Aadhar.jpg')
@@ -232,13 +222,7 @@ class main2(QWidget):
         audio3 = gTTS("Please press start button to start recording your voice, say stop to end the recording")
         audio3.save("textaudio3.mp3")
         playsound("textaudio3.mp3")
-        """ssh = paramiko.SSHClient()
-        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh.connect(hostname='192.168.207.96', username='tejas', password='trp17kpl', port=22)
-        sftp_client = ssh.open_sftp()
-        sftp_client.put("C:\\Users\\tejas\\Capstone-Project-T229\\UI-Design-Code\\UI Test\\Image_capture\\PID_2\\2.png",'/home/tejas/share/PID_1/2.png')
-        sftp_client.put("C:\\Users\\tejas\\Capstone-Project-T229\\UI-Design-Code\\UI Test\\Image_capture\\PID_2\\OCR_1.jpg",'/home/tejas/share/PID_1/OCR_1.jpg')
-        sftp_client.put("Data.log", '/home/tejas/share/PID_1/Data.txt')"""
+        
 
         
 class main3(QWidget):
@@ -287,11 +271,11 @@ class main3(QWidget):
         logger2.warning(symptoms)
         self.lineEdit.setText("{}".format(symptoms))
         return symptoms
-        #self.Text.setText('Your Voice has been recorded.')
-        #self.Text.setText(symptoms)
-        audio4 = gTTS("if the speech data is not identified correctly,please press retry else press next to continue")
-        audio4.save("textaudio4.mp3")
-        playsound("textaudio4.mp3")
+        audios = gTTS("if the speech data is not identified correctly,please press retry else press next to continue")
+        audios.save("textaudios.mp3")
+        playsound("textaudios.mp3")
+        
+        
 
     def retry(self):
         window4.Start_recording()
@@ -302,7 +286,16 @@ class main3(QWidget):
         audio4 = gTTS("Please place the NFC Card from the pile on the reader marked as given below.Please wait while the Write Process completes.After successful Write Process, you have come to final stage of the process.Please Press Next button")
         audio4.save("textaudio4.mp3")
         playsound("textaudio4.mp3")
+        ssh = paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        ssh.connect(hostname='192.168.89.96', username='tejas', password='trp17kpl', port=22)
+        sftp_client = ssh.open_sftp()
+        sftp_client.put("C:\\Users\\tejas\\Capstone-Project-T229\\UI-Design-Code\\UI Test\\Final UI Design\\PATIENT0001\\1.png",'/home/tejas/share/PATIENT0001/1.png')
+        sftp_client.put("C:\\Users\\tejas\\Capstone-Project-T229\\UI-Design-Code\\UI Test\\Final UI Design\\PATIENT0001\\OCR_1.jpg",'/home/tejas/share/PATIENT0001/OCR_1.jpg')
+        sftp_client.put("C:\\Users\\tejas\\Capstone-Project-T229\\UI-Design-Code\\UI Test\\Final UI Design\\PATIENT0001\\Data.log", '/home/tejas/share/PATIENT0001/Data.txt')
+        sftp_client.put("C:\\Users\\tejas\\Capstone-Project-T229\\UI-Design-Code\\UI Test\\Final UI Design\\PATIENT0001\\Symptoms.log", '/home/tejas/share/PATIENT0001/Symptoms.txt')
 
+        
 class main4(QWidget):
     def __init__(self):
         super(main4,self).__init__()
@@ -341,6 +334,7 @@ window3=main2()
 window4=main3()
 window5=main4()
 window6=main5()
+
 
 def open(r):
     if r==1:

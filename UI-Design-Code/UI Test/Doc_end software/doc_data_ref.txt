@@ -1,0 +1,14 @@
+Details format for GUI
+
+Consultation : Patient has severe neck pain, fever, blood cough.
+Med history : if there/NA
+vitals : 120/80, 76bpm, 95(SpO2 Avg)
+Lab test :RT-PCR(Negetive), Blood test(Normal)
+
+Medication:
+xxx
+1A(BF) 0B(LU) 1B(DN)
+2/day
+YYY
+1A(BF) 0B(LU) 0B(DN)
+1/day

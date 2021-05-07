@@ -1,0 +1,8 @@
+2021-05-06
+Patient has severe back pain, fever, cough.
+NA
+120/80, 76bpm, 95(Sp02 Avg)
+Blood Test(Normal),RT PCR(Negative)
+xxx
+1A(BF) 0B(LU) 1B(DN)
+2/day
