@@ -1,0 +1,18 @@
+logging
+os
+sys
+time
+from logging.handlers import RotatingFileHandler
+paramiko
+cv2
+numpy as np
+pytesseract
+speech_recognition as sr
+fromPIL import Image
+from PyQt5 import QtCore
+from PyQt5 import uic
+from PyQt5.QtCore import pyqtSlot
+from PyQt5.QtGui import QImage, QPixmap, QFont
+from PyQt5.QtWidgets import QMainWindow, QWidget, QDialog, QApplication, QVBoxLayout, QLabel, QLineEdit, QPushButton
+from gtts import gTTS
+from playsound import playsound
