@@ -1,10 +1,11 @@
 ## Capstone Project: Medical Record Maintenance BOT, T-229
 The Project is carried out under the guidance of Dr. T. S. Chandar. This is the entire code repository for the Final Year Project (7th - 8th SEM).
 
-The Project has completed the Phase 1 and now moving into the Phase 2 in which the following domains will be implemented in software.
+The Project has completed the Phase 1 and Phase 2. Successfully implemented all below domains.
+
 
 - [x] Code for NFC Generation
-- [ ] Code for Token Generation
+- [x] Code for Token Generation
 - [x] UI Design for Kiosk
 - [x] Software Design for Doctor's end
 
